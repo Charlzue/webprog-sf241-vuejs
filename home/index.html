@@ -6,6 +6,8 @@
     <title>Personal Profile</title>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images.css">
+ 
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
@@ -21,6 +23,14 @@
         <div class="greeting-box">
             {{ message }}
         </div>
+
+    <div id="app2">
+
+  <div>
+    <img v-for="x in manyFoods" v-bind:src="x">
+  </div>
+
+</div>
 
         <div class="profile-section">
             <img src="toph.jpg" alt="Profile Image" class="profile-img">
@@ -63,5 +73,7 @@
 </div>
 
 <script src="vue.js"></script>
+<script src="images.js"></script>
+ 
 </body>
 </html>
