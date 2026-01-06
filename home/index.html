@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBPROG SF241 | {{ name }}</title>
+    <title>Personal Profile</title>
+    
     <link rel="stylesheet" href="style.css">
+    
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
@@ -21,7 +23,7 @@
         </div>
 
         <div class="profile-section">
-            <img src="toph.jpg" alt="Charl Christopher (Toph)" class="profile-img">
+            <img src="toph.jpg" alt="Profile Image" class="profile-img">
             <div class="bio-info">
                 <h2>About Me</h2>
                 <p>Hi, I am <span class="highlight">{{ name }}</span>, but you can call me <strong>{{ nickname }}</strong>! I am a student at Asia Pacific College with a passion for building secure and efficient digital solutions.</p>
@@ -42,12 +44,16 @@
                 </ul>
             </div>
 
-<div class="card">
-    <h2>Interests</h2>
-    <ul>
-        <li v-for="item in interests" :key="item">{{ item }}</li>
-    </ul>
-</div>
+            <div class="card">
+                <h2>IT Experience</h2>
+                <ul>
+                    <li v-for="exp in experience" :key="exp.title">
+                        {{ exp.title }} <span class="highlight">({{ exp.year }})</span>
+                    </li>
+                </ul>
+                <h2>Interests</h2>
+                <p>{{ interests }}</p>
+            </div>
         </div>
     </div>
 

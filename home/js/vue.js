@@ -6,7 +6,7 @@ const app = Vue.createApp({
             specialization: "BS Computer Science | Cybersecurity & Forensics",
             message: "🎉 Happy New Year 2026!",
             goal: "To become financially stable and to live in a peaceful country.",
-            interests: ["Walking", "Playing", "Watching", "Data Analytics", "Project Management"],
+            interests: "Walking, Playing, Watching, Data Analytics & Project Management",
             education: [
                 { name: "Asia Pacific College", year: "2024 - Present" },
                 { name: "Arellano University - JAS", year: "2022 - 2024" },
@@ -18,7 +18,12 @@ const app = Vue.createApp({
                 { title: "Botomatiko", year: "2023 - 2024" }
             ]
         }
+    },
+    mounted() {
+        // Sets the browser tab title once the app is loaded
+        document.title = `WEBPROG SF241 | ${this.name}`;
     }
 });
 
+// Mount the app to the div with id="app"
 app.mount('#app');
