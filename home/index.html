@@ -42,16 +42,12 @@
                 </ul>
             </div>
 
-            <div class="card">
-                <h2>IT Experience</h2>
-                <ul>
-                    <li v-for="exp in experience" :key="exp.title">
-                        {{ exp.title }} <span class="highlight">({{ exp.year }})</span>
-                    </li>
-                </ul>
-                <h2>Interests</h2>
-                <p>{{ interests }}</p>
-            </div>
+<div class="card">
+    <h2>Interests</h2>
+    <ul>
+        <li v-for="item in interests" :key="item">{{ item }}</li>
+    </ul>
+</div>
         </div>
     </div>
 
