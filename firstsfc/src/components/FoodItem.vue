@@ -9,8 +9,8 @@
 export default {
   data() {
     return {
-      name: 'Coffee',
-      message: 'I love kopi'
+      name: 'Coffee and Takoyaki',
+      message: 'Top Tier Combo'
     }
   }
 };
