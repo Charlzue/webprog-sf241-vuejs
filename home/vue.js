@@ -16,7 +16,16 @@ const app = Vue.createApp({
             experience: [
                 { title: "CLI-Based Sustainable Recycling App", year: "2025" },
                 { title: "Botomatiko", year: "2023 - 2024" }
-            ]
+            ],
+            manyFoods: [
+                'https://www.w3schools.com/vue/img_burrito.svg',
+                'https://www.w3schools.com/vue/img_salad.svg',
+                'https://www.w3schools.com/vue/img_cake.svg',
+                'https://www.w3schools.com/vue/img_soup.svg',
+                'https://www.w3schools.com/vue/img_fish.svg',
+                'https://www.w3schools.com/vue/img_pizza.svg',
+                'https://www.w3schools.com/vue/img_rice.svg'
+              ]
         }
     },
     mounted() {
@@ -26,4 +35,5 @@ const app = Vue.createApp({
 });
 
 // Mount the app to the div with id="app"
+
 app.mount('#app');
