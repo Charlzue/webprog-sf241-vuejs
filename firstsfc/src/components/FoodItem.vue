@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div = "netflix" >
     <h2>{{ name }}</h2>
     <p>{{ message }}</p>
   </div>
@@ -9,11 +9,19 @@
 export default {
   data() {
     return {
-      name: 'Coffee and Takoyaki',
-      message: 'Top Tier Combo'
+      name: 'Netflix and Chill',
+      message: 'a.k.a. Bebetime'
     }
   }
 };
 </script>
 
-<style></style>
+<style>
+  .netflix {
+    border: dashed black 1px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FF0000;
+  }
+  </style>
